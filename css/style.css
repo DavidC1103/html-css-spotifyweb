@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+
+.text-col {
+  color: white;
+}
+
 body {
   background-color: #141922;
 }
@@ -22,14 +27,48 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 999;
 }
 
-.left-menu {
+header .left-menu {
   background-color: black;
   width: 230px;
   height: 100vh;
   position: fixed;
   left: 0;
+  bottom: 80px;
+}
 
+main {
+  padding-top: 100px;
+  margin-left: 250px;
+}
+
+main ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+main ul li {
+  padding-left: 20px;
+}
+
+.container {
+  max-width: 1600px;
+  width: 100%;
+  background-color: blue;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row .card {
+  background-color: aquamarine;
+  width: calc(100% / 7);
+  height: 200px;
+  margin-right: 20px;
 }
