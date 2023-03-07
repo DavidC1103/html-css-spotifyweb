@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141922;
+}
+
+header {
+  background-color: brown;
+  height: 80px;
+  position: fixed;
+  left: 230px;
+  width: 100%;
+}
+
+footer {
+  background-color: green;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.left-menu {
+  background-color: black;
+  width: 230px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+
+}
