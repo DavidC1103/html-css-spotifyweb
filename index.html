@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify Web</title>
   </head>
@@ -14,29 +18,77 @@
           EFFETTUA L'UPGRADE
         </div>
 
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="left-menu">
+      <div class="first-menu">
+
+<!--TOP MENU OF LEFT MENU-->
+        <div class="text-gray">
+          <div class="logo">
+            <img src="img/logo.svg" alt="">
+          </div>
+
+          <div class="mt-30 mb-20">
+            <div class="smart-menu pt-5 pb-5">
+              <img src="img/home.svg" class="small-img " alt="">
+              <span>Home</span>
+            </div>
+
+            <div class="smart-menu pt-5 pb-5">
+              <img src="img/search.svg" class="small-img" alt="">
+              <span>Cerca</span>
+            </div>
+
+            <div class="smart-menu pt-5 pb-5">
+              <img src="img/libreria.svg" class="small-img" alt="">
+              <span>La tua libreria</span>
+            </div>
+          </div>
+
+<!--PLAYLIST-->
+          <div>
+            <ul class=" menu-playlist text-gray">
+              <li class="text-white">PLAYLIST</li>
+              <li><i class="fa-solid fa-square-plus"></i> Crea nuova playlist</li>
+              <li>Nome playlist</li>
+              <li>Nome playlist</li>
+              <li>Nome playlist</li>
+              <li>Nome playlist</li>
+              <li>Nome playlist</li>
+              <li>Nome playlist</li>
+              <li>Nome playlist</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </header>
-    <div class="left-menu text-white">
-      <div class="logo">
-        <img src="img/logo.svg" alt="">
-      </div>
 
-      <div class="pt-30">
-        <img src="img/home.svg" class="small-img align-center" alt="">
-        <span>Home</span>
-      </div>
+<!--BOTTOM MENU OF LEFT MENU-->
+      <div class="bottom-menu text-gray">
+        <div class="download">
+          <i class="fa-regular fa-circle-down"></i><span> Installa app</span>
+        </div>
 
-      <div>
-        <img src="img/search.svg" class="small-img" alt="">
+        <hr>
+
+        <div class="user text-white">
+          <img src="img/profile.svg"  class="small-img" alt="">
+          <span>Jhon Doe</span>
+        </div>
+
       </div>
 
     </div>
+    </section>
 
 
 
     <main>
-      <div class="content">
+  
+
+        <!--MENU MAIN-->
         <section>
           <nav class="text-gray">
             <ul>
@@ -50,6 +102,7 @@
           </nav>
         </section>
 
+       <!-- LISTEN RECENTLY--> 
         <section class="recently">
           <h2 class="text-white">Recently Played</h2>
           <div class="row container">
@@ -58,46 +111,55 @@
               <div class="title-song text-white">Heavy Metal</div>
               <span class="text-gray">Subtitle</span>
             </div>
+
             <div class="card">
               <img src="img/stranger.jpeg" alt="">
               <div class="title-song text-white">Stranger Thing, Vol. 1 (a
                 Netflix Original Series Soundtrack) </div>
               <span class="text-gray">Kyle Dixon & Michael Stein</span>
             </div>
+
             <div class="card">
               <img src="img/aquietplace.jpeg" alt="">
               <div class="title-song text-white"> A quiet place</div>
               <span class="text-gray">Subtitle</span>
             </div>
+
             <div class="card">
               <img src="img/split.jpeg" alt="">
               <div class="title-song text-white">Split</div>
               <span class="text-gray">Subtitle</span>
             </div>
+
             <div class="card">
               <img src="img/cure.jpeg" alt="">
               <div class="title-song text-white">A cure for wellness</div>
               <span class="text-gray">Subtitle</span>
             </div>
+
             <div class="card">
               <img src="img/sinister.jpeg" alt="">
               <div class="title-song text-white">Sinister</div>
               <span class="text-gray">Subtitle</span>
             </div>
-          </div>
+      
         </section>
 
+       <!--JHON DOE--> 
         <section class="for-jhon">
+
           <div class="title-playlist">
             <h2 class="text-white">Creato per Jhon Doe</h2>
             <span class="text-gray">Più ascolti, più accurati saranno i
               suggerimenti</span>
           </div>
+
           <div class="row container">
             <div class="card">
               <img src="img/radar.jpeg" alt="">
               <div class="title-song text-white">Realease Radar</div>
             </div>
+
             <div class="card">
               <img src="img/mixdaily.jpeg" alt="">
               <div class="title-song text-white">Daily Mix 1</div>
@@ -105,6 +167,7 @@
           </div>
         </section>
 
+      <!--MOST POPULAR-->  
         <section>
           <div class="title-playlist">
             <h2 class="text-white">Artisti più popolari</h2>
@@ -112,20 +175,19 @@
               suggerimenti</span>
           </div>
           <div class="row container">
+
             <div class="card radius">
               <img src="img/youg.jpeg" alt="">
               <div class="title-song text-white">Landa Del Rey</div>
             </div>
+
             <div class="card radius">
               <img src="img/einaudi.jpeg" alt="">
               <div class="title-song text-white">Ludovico Einaudi</div>
             </div>
           </div>
         </section>
-
-
-
-      </main>
+    </main>
     </div>
 
 
