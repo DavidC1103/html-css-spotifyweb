@@ -28,7 +28,7 @@ body {
 }
 
 header {
-  background-color: rgba(165, 42, 42, 0.082);
+  background-color: #080b1296;
   height: 80px;
   position: fixed;
   left: 230px;
@@ -52,7 +52,6 @@ main {
 
 h2 {
   font-size: 35px;
-  display: block;
   margin-top: 40px;
 }
 
@@ -116,14 +115,11 @@ main ul li {
 
 /*SECTION MAIN MARGIN*/
 .recently {
-  margin-bottom: 100px;
-}
-
-.for-jhon {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 
+/*-----------------------------------------------*/
 /*MAIN CONTENT*/
 
 .row {
@@ -143,7 +139,15 @@ main ul li {
   margin-bottom: 20px;
 }
 
+.row .card.radius img {
+  border-radius: 50%;
+}
+
 .title-song {
   padding-bottom: 10px;
   font-size: 24px;
+}
+
+.title-playlist h2 {
+  margin-bottom: 15px;
 }
