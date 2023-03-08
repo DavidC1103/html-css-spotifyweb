@@ -4,21 +4,36 @@
   box-sizing: border-box;
 }
 
+/*UTILITIES*/
 
-.text-col {
+.text-white {
   color: white;
 }
 
+.text-gray {
+  color: #6A6C72;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+
+
+
+
 body {
   background-color: #141922;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header {
-  background-color: brown;
+  background-color: rgba(165, 42, 42, 0.082);
   height: 80px;
   position: fixed;
   left: 230px;
-  width: 100%;
+  width: 100vw;
+  z-index: 999;
 }
 
 footer {
@@ -29,20 +44,60 @@ footer {
   width: 100%;
 }
 
+main {
+  padding-top: 100px;
+  padding-left: 250px;
+  padding-bottom: 100px;
+}
+
+h2 {
+  font-size: 35px;
+  display: block;
+  margin-top: 40px;
+}
+
+
+.container {
+  max-width: 1600px;
+  width: 100%;
+}
+
+
+
+
+
+/*LEFT MENU*/
 header .left-menu {
   background-color: black;
   width: 230px;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   left: 0;
   bottom: 80px;
+  padding-left: 20px;
 }
 
-main {
-  padding-top: 100px;
-  margin-left: 250px;
+.left-menu .logo {
+  filter: invert(0);
+  object-fit: cover;
+  margin-top: 100px;
+  width: 75%;
 }
 
+.left-menu .small-img {
+  width: 17%;
+  padding-top: 10px;
+  display: inline-block;
+  vertical-align: bottom;
+
+}
+
+
+/*-------------------------------------------*/
+
+
+
+/*NAVIGATION MAIN*/
 main ul {
   display: flex;
   flex-wrap: wrap;
@@ -55,20 +110,40 @@ main ul li {
   padding-left: 20px;
 }
 
-.container {
-  max-width: 1600px;
-  width: 100%;
-  background-color: blue;
+/*------------------------------------*/
+
+
+
+/*SECTION MAIN MARGIN*/
+.recently {
+  margin-bottom: 100px;
 }
+
+.for-jhon {
+  margin-bottom: 100px;
+}
+
+
+/*MAIN CONTENT*/
 
 .row {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .row .card {
-  background-color: aquamarine;
-  width: calc(100% / 7);
-  height: 200px;
   margin-right: 20px;
+  width: calc(100% / 7);
+  text-align: center;
+}
+
+.row .card img {
+  object-fit: contain;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.title-song {
+  padding-bottom: 10px;
+  font-size: 24px;
 }
