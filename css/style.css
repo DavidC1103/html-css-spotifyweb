@@ -56,7 +56,7 @@ header {
 }
 
 footer {
-  background-color: green;
+  background-color: #282828;
   height: 80px;
   width: 100%;
 }
@@ -64,7 +64,7 @@ footer {
 main {
   padding-top: 100px;
   padding-left: 250px;
-  padding-bottom: 100px;
+  padding-bottom: 30px;
   height: calc(100vh - 80px);
   overflow-y: auto;
 }
@@ -133,23 +133,55 @@ ul {
   width: 75%;
 }
 
+.left-menu .logo img:hover {
+  filter: invert(40%) sepia(80%) saturate(420%) hue-rotate(40deg) brightness(103%) contrast(98%);
+  cursor: pointer;
+}
+
 .left-menu .small-img {
   width: 15%;
   vertical-align: middle;
 }
 
+.left-menu .playlist {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+
+.left-menu .newplaylist {
+  padding-bottom: 10px;
+}
+
+.left-menu .newplaylist i {
+  font-size: 50px;
+  vertical-align: middle;
+}
+
+.left-menu .newplaylist span {
+  font-size: 16px;
+}
+
 .left-menu .menu-playlist {
-  height: calc(100vh - 430px);
+  height: calc(100vh - 530px);
   overflow: auto;
+}
+
+.left-menu .newplaylist i:hover {
+  color: #9FEA2D;
+  cursor: pointer;
+}
+
+.left-menu .newplaylist span:hover {
+  color: white;
+  cursor: pointer;
 }
 
 .left-menu ul li {
   padding-bottom: 10px;
   padding-top: 10px;
-}
-
-.left-menu ul:first-child li {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 800;
 }
 
@@ -190,10 +222,41 @@ ul {
 }
 
 
+/*HIDDEN MENU LEFT*/
+.hidden-menu {
+  display: none;
+  background-color: black;
+  width: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 80px;
+  height: 100%;
+}
 
+.hidden-menu .small-logo {
+  filter: invert(0);
+  object-fit: cover;
+  margin-top: 90px;
+  margin-bottom: 10px;
+  width: 70%;
+  margin-left: 8px;
+}
 
+.hidden-menu .smart-menu {
+  width: 70%;
+  margin-left: 8px;
+}
 
+.hidden-menu .download {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
 
+.hidden-menu .user img {
+  width: 60%;
+  background-color: gray;
+  border-radius: 50%;
+}
 
 /*-------------------------------------------*/
 
@@ -262,7 +325,139 @@ main ul li:hover {
 /*----------------------------------------------------*/
 
 
+
+/*FOOTER*/
+
+.footer-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-left {
+  width: 25%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left .song {
+  height: 50px;
+  width: 50px;
+}
+
+.footer-left .song img {
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  object-fit: contain;
+
+}
+
+.footer-left .title-song-footer {
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+
+footer .footer-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.middle-top ul li {
+  display: inline;
+  font-style: none;
+  color: white;
+  padding: 10px;
+  font-size: 22px;
+}
+
+
+.middle-down {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.middle-down span {
+  color: white;
+  font-size: 12px;
+}
+
+.line-middle {
+  position: relative;
+  height: 4px;
+  width: 550px;
+  background-color: #6E7075;
+  border-radius: 30px;
+  margin: 0 10px;
+}
+
+.line-middle::before {
+  position: absolute;
+  z-index: 999;
+  content: "";
+  background-color: white;
+  border-radius: 30px;
+  height: 4px;
+  width: 250px;
+}
+
+
+
+/*FOOTER RIGHR*/
+.footer-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+.bottom-right {
+  display: flex;
+}
+
+.icon-right {
+  color: #6E7075;
+}
+
+.icon-right i {
+  padding-left: 15px;
+}
+
+.line-right {
+  position: relative;
+  height: 4px;
+  width: 150px;
+  background-color: #6E7075;
+  margin: 0 10px;
+}
+
+.line-right::before {
+  position: absolute;
+  z-index: 999;
+  content: "";
+  background-color: white;
+  height: 3px;
+  width: 50px;
+}
+
+.line-r {
+  margin-top: 10px;
+  display: flex;
+}
+
+
 @media screen and (max-width: 1200px) {
+
+  main ul li {
+    padding-top: 30px;
+  }
 
   .row {
     flex-wrap: wrap;
@@ -271,4 +466,40 @@ main ul li:hover {
   .row .card {
     width: calc(100% / 5);
   }
+}
+
+@media screen and (max-width: 780px) {
+
+  .row .card {
+    width: calc(100% / 3);
+  }
+
+}
+
+@media screen and (max-width:650px) {
+  .left-menu {
+    display: none;
+  }
+
+  .hidden-menu {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  header {
+    left: 50px;
+  }
+
+  header .btn {
+    margin-right: 60px;
+  }
+
+  main {
+    padding-left: 70px;
+  }
+
+
 }
