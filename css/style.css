@@ -11,7 +11,7 @@
 }
 
 .text-gray {
-  color: #6A6C72;
+  color: #6E7075;
 }
 
 .mt-30 {
@@ -34,10 +34,7 @@
   padding-bottom: 10px;
 }
 
-.align-center {
-  vertical-align: middle;
-}
-
+/*----------------------------------------*/
 
 
 
@@ -83,6 +80,7 @@ ul {
   width: 100%;
 }
 
+/*----------------------------------------*/
 
 /*HEADER*/
 .cta {
@@ -106,12 +104,13 @@ ul {
   color: black;
 }
 
+/*----------------------------------------*/
 
 /*LEFT MENU*/
 .left-menu {
   background-color: black;
   width: 230px;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   left: 0;
   bottom: 80px;
@@ -164,7 +163,7 @@ ul {
 }
 
 .left-menu .menu-playlist {
-  height: calc(100vh - 530px);
+  height: calc(100vh - 505px);
   overflow: auto;
 }
 
@@ -221,6 +220,7 @@ ul {
   cursor: pointer;
 }
 
+/*----------------------------------------------*/
 
 /*HIDDEN MENU LEFT*/
 .hidden-menu {
@@ -322,7 +322,7 @@ main ul li:hover {
   margin-bottom: 15px;
 }
 
-/*----------------------------------------------------*/
+/*----------------------------------------------*/
 
 
 
@@ -334,23 +334,25 @@ main ul li:hover {
   justify-content: space-between;
 }
 
+
+/*FOOTER LEFT*/
 footer .footer-left {
   width: 25%;
   height: 100%;
   align-items: center;
   display: flex;
-  justify-content: space-between;
+
 }
 
 .footer-left .song {
   height: 50px;
-  width: 50px;
+
 }
 
 .footer-left .song img {
-  width: 100%;
   height: 100%;
   padding-left: 10px;
+  margin-right: 10px;
   object-fit: contain;
 
 }
@@ -360,7 +362,26 @@ footer .footer-left {
   font-size: 12px;
 }
 
+.icon-left {
+  padding-left: 40px;
+  font-size: 20px;
+}
 
+.icon-left i {
+  padding-left: 10px;
+}
+
+.icon-left i:first-child:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.icon-left i:last-child:hover {
+  color: #9FEA2D;
+  cursor: pointer;
+}
+
+/*FOOTER MIDDLE*/
 footer .footer-middle {
   display: flex;
   flex-direction: column;
@@ -375,6 +396,7 @@ footer .footer-middle {
   color: white;
   padding: 10px;
   font-size: 22px;
+  width: 100%;
 }
 
 
@@ -382,6 +404,7 @@ footer .footer-middle {
   display: flex;
   align-items: center;
   margin-top: 10px;
+  width: 100%;
 }
 
 .middle-down span {
@@ -392,7 +415,7 @@ footer .footer-middle {
 .line-middle {
   position: relative;
   height: 4px;
-  width: 550px;
+  width: 100%;
   background-color: #6E7075;
   border-radius: 30px;
   margin: 0 10px;
@@ -400,17 +423,16 @@ footer .footer-middle {
 
 .line-middle::before {
   position: absolute;
-  z-index: 999;
   content: "";
   background-color: white;
-  border-radius: 30px;
+  border-radius: 20px;
   height: 4px;
-  width: 250px;
+  width: 40%;
 }
 
 
 
-/*FOOTER RIGHR*/
+/*FOOTER RIGHT*/
 .footer-right {
   display: flex;
   justify-content: center;
@@ -418,12 +440,9 @@ footer .footer-middle {
   width: 25%;
 }
 
-.bottom-right {
-  display: flex;
-}
 
 .icon-right {
-  color: #6E7075;
+  display: flex;
 }
 
 .icon-right i {
@@ -440,20 +459,21 @@ footer .footer-middle {
 
 .line-right::before {
   position: absolute;
-  z-index: 999;
   content: "";
   background-color: white;
   height: 3px;
-  width: 50px;
+  width: 50%;
 }
+
 
 .line-r {
-  margin-top: 10px;
+  align-items: center;
   display: flex;
+  width: 50%;
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
 
   main ul li {
     padding-top: 30px;
@@ -468,7 +488,7 @@ footer .footer-middle {
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 900px) {
 
   .row .card {
     width: calc(100% / 3);
@@ -476,7 +496,7 @@ footer .footer-middle {
 
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:780px) {
   .left-menu {
     display: none;
   }
@@ -499,6 +519,10 @@ footer .footer-middle {
 
   main {
     padding-left: 70px;
+  }
+
+  .footer-left .icon-left {
+    padding-left: 5px;
   }
 
 
